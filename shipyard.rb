@@ -9,15 +9,15 @@ class Shipyard < Formula
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/shipyard-run/shipyard/releases/download/v0.0.2/shipyard_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "972e0fffd3922f636792515b8a19f1346a22075cb131bc1af6a1ca1c32214ab3"
+      sha256 "43cafaaadcdd7840fdba15bd78870de84e2bc3e4453814ccc4ae75e0838a9712"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/shipyard-run/shipyard/releases/download/v0.0.2/shipyard_0.0.2_Linux_arm64.tar.gz"
-        sha256 "9306cf58764ade4486402a7ba18ddd86d12aa18b9acc9f0ab570b7309ef273e7"
+        sha256 "dbfbb2842b1a9d88c37eca1075847b7170fbda3f395af3583f2ec8dd95b31b6b"
       else
         url "https://github.com/shipyard-run/shipyard/releases/download/v0.0.2/shipyard_0.0.2_Linux_armv6.tar.gz"
-        sha256 "430178caaebf55eeb88162912d01c4d30075b9f3ab6f7600f3e6cdceb70c243e"
+        sha256 "57d0a2fab30d1abd9d959fb0f92e10e59abf3edc9031cf94ff0b3b8f90ca0773"
       end
     end
   end
