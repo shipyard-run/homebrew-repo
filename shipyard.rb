@@ -23,9 +23,6 @@ class Shipyard < Formula
       end
     end
   end
-  
-  depends_on "git"
-  depends_on "docker"
 
   def install
     bin.install "shipyard"
