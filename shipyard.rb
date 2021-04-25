@@ -2,24 +2,24 @@
 class Shipyard < Formula
   desc ""
   homepage "https://shipyard.run/"
-  version "0.3.4"
+  version "0.3.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.4/shipyard_0.3.4_Darwin_x86_64.tar.gz"
-    sha256 "008b4c91d4417c38ce46d26a5099ac00561e68b3b59e2aacbfa9b7394854ab4f"
+    url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.5/shipyard_0.3.5_Darwin_x86_64.tar.gz"
+    sha256 "44a39b65925f9ce165c640343dbfa108d3c258c06edf9e3e2315ab106337673a"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.4/shipyard_0.3.4_Linux_x86_64.tar.gz"
-    sha256 "5e5b4c1b7790606134e3b582e602308b0309af199d0f93c5588c23d01a858cfa"
+    url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.5/shipyard_0.3.5_Linux_x86_64.tar.gz"
+    sha256 "472e515270d21c0d29bc0da52926e46f8e3100da791e974c1cb0893b038cc39f"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.4/shipyard_0.3.4_Linux_armv6.tar.gz"
-    sha256 "d65e1e1fc6b83bab1c462953ef0fcfb5f5eb49167e91d72a25c3ae41e7cc7870"
+    url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.5/shipyard_0.3.5_Linux_armv6.tar.gz"
+    sha256 "3f47e1e6843891dfec248ea01f6f567ebfb2bbf41f7161b0fd2c7ec5eccff050"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.4/shipyard_0.3.4_Linux_arm64.tar.gz"
-    sha256 "f3db7875f5e5570d17a78c2509e000f982fe31004d9e9b7ccd25a627bc7d6a56"
+    url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.5/shipyard_0.3.5_Linux_arm64.tar.gz"
+    sha256 "d26bae00432eb80995318c0e4bd640fc50b6089742e9ed85ed2a512a2f07f9ef"
   end
 
   def install
