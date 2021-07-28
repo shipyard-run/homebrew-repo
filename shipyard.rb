@@ -10,11 +10,11 @@ class Shipyard < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.18/shipyard_0.3.18_Darwin_x86_64.zip"
-    sha256 "4909b3de2d392a010564c980a47d16695f0fff433ec0d42984cfefbe18b8877d"
+    sha256 "47e53477158da6e8ee2de6ca27fc2af66b0d3f093449e21564ffda4dbbf06c7f"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.18/shipyard_0.3.18_Darwin_arm64.zip"
-    sha256 "fe72a6c568646c6c6cc3e4fd621f95e675e020e5bcabae083511a60231dc9e62"
+    sha256 "ea4ebdab7824073c0f761e73589171548a7f3eeaf1b45c7cc2862e6e5bf29c9e"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.18/shipyard_0.3.18_Linux_x86_64.tar.gz"
