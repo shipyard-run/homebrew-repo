@@ -4,8 +4,11 @@
 class Shipyard < Formula
   desc ""
   homepage "https://shipyard.run/"
+<<<<<<< HEAD
+  version "0.3.44"
+=======
   version "0.3.47"
-  bottle :unneeded
+>>>>>>> shipyard-run-main
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/shipyard-run/shipyard/releases/download/v0.3.47/shipyard_0.3.47_darwin_x86_64.zip"
